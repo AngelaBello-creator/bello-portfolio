@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(10, 22, 40, 0.8);
+  backdrop-filter: blur(10px);
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  overflow: hidden; // IMPORTANTÍSIMO
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+}
+
+
+  nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+
+  nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+
+    &:hover {
+      color: #00bcd4;
+    }
+  }
+}

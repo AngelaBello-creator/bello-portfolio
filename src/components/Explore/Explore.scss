@@ -1,0 +1,27 @@
+.explore-section {
+  text-align: center;
+  padding: 60px 20px;
+
+  h2 {
+    font-size: 48px;
+    color: #00bcd4;
+    margin-bottom: 60px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-section {
+    h2 {
+      font-size: 36px;
+    }
+  }
+}

@@ -1,15 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
 import Home from "./pages/Home";
-import ProjectsPage from "./pages/ProjectsPage";
-import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
 
 export default function App() {
   return (
     <BrowserRouter basename="/bello-portfolio">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="*" element={<NotFound />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

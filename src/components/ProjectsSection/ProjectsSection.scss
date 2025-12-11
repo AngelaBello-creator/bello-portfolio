@@ -1,0 +1,19 @@
+.projects-section {
+  padding: 80px 20px;
+
+  h2 {
+    text-align: center;
+    font-size: 48px;
+    color: #00bcd4;
+    margin-bottom: 60px;
+  }
+
+  .project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
